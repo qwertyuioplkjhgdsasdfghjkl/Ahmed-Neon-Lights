@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmed Neon Lights</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            font-size: 36px;
+            font-weight: bold;
+            padding: 20px;
+            animation: colorChange 3s infinite alternate;
+        }
+        @keyframes colorChange {
+            0% { color: red; }
+            25% { color: orange; }
+            50% { color: yellow; }
+            75% { color: green; }
+            100% { color: cyan; }
+        }
+        video {
+            width: 50%;
+            height: 4in;
+            margin: 20px auto;
+            display: block;
+        }
+        .section {
+            margin: 20px 0;
+        }
+        .image-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: #005f73;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            transition: transform 0.3s, background 0.3s;
+        }
+        .box:hover {
+            background-color: #0a9396;
+            transform: scale(1.1);
+        }
+        .contact-box {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: white;
+            color: black;
+            font-weight: bold;
+            transition: background 0.3s, color 0.3s;
+        }
+        .contact-box:hover {
+            background-color: yellow;
+            color: red;
+        }
+        .footer {
+            margin-top: 20px;
+            padding: 20px;
+            font-size: 18px;
+            animation: footerEffect 3s infinite alternate;
+        }
+        @keyframes footerEffect {
+            0% { transform: scale(1); opacity: 0.8; }
+            100% { transform: scale(1.1); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">Ahmed Neon Lights</div>
+    <video src="k.mp4" autoplay loop muted></video>
+    
+    <div class="section">
+        <h2>All Type Neon Lights Available</h2>
+        <div class="image-container">
+            <div class="box"><img src="1.jpg" width="100%"></div>
+            <div class="box"><img src="4.jpeg" width="100%"></div>
+            <div class="box"><img src="3.jpeg" width="100%"></div>
+        </div>
+    </div>
+    <div class="section">
+        
+        <div class="image-container">
+            <div class="box"><img src="5.jpeg" width="100%"></div>
+            <div class="box"><img src="2.jpg" width="100%"></div>
+            <div class="box"><img src="6.jpg" width="100%"></div>
+        </div>
+    </div>
+    <div class="section">
+        
+        <div class="image-container">
+            <div class="box"><img src="7.jpeg" width="100%"></div>
+            <div class="box"><img src="8.jpeg" width="100%"></div>
+            <div class="box"><img src="9.jpeg" width="100%"></div>
+        </div>
+    </div>
+    <div class="section">
+        
+        <div class="image-container">
+            <div class="box"><img src="11.jpeg" width="100%"></div>
+            <div class="box"><img src="10.jpeg" width="100%"></div>
+            <div class="box"><img src="12.jpeg" width="100%"></div>
+        </div>
+    </div>
+    <div class="contact-box">Contact Number: 03433081372</div>
+    <div class="footer">For More Information About Neon Lights Please Contact: 03433081372</div>
+</body>
+</html>
